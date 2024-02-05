@@ -40,3 +40,6 @@ Happy coding!
 
 https://www.favicon-generator.org/
 Favicon.ico & App Icon GeneratorFrom Dan's Tools
+
+photos
+https://www.pexels.com/uk-ua/search/barbershop/
