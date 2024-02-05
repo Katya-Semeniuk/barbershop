@@ -16,6 +16,15 @@ body {
   color: #303030;
 }
 
+header {
+  background-color: aqua;
+}
+main {
+  background-color: yellowgreen;
+}
+footer {
+  background-color: bisque;
+}
 .active {
   color: red;
 }
