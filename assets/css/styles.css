@@ -20,9 +20,12 @@ h2,
 h3 {
   font-family: "Raleway", sans-serif;
 }
-/* Header */
+/* HEADER */
 header {
   background-color: aqua;
+  position: fixed;
+  padding: 0 10px;
+  width: 100%;
 }
 .active {
   color: #ff6c00;
@@ -31,13 +34,19 @@ header {
   background-color: gray;
 }
 
-/* Main */
+/* MAIN */
 main {
   background-color: yellowgreen;
   flex: 1 0 auto;
 }
-
-/* Footer */
+/* Hero section */
+/* #hero {
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+/* FOOTER */
 footer {
   background-color: bisque;
 }
