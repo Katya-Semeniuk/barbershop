@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* font-family: "Lat0", sans-serif; */
+  color: #303030;
+}
+
+.active {
+  color: red;
+}
+.item {
+  background-color: gray;
+}
