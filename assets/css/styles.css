@@ -7,11 +7,13 @@
 ul {
   list-style-type: none;
 }
-
+a {
+  text-decoration: none;
+}
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   font-family: "Open Sans", sans-serif;
   color: #303030;
 }
@@ -19,25 +21,69 @@ h1,
 h2,
 h3 {
   font-family: "Raleway", sans-serif;
+  color: brown;
 }
+
 /* HEADER */
 header {
-  background-color: aqua;
+  background-color: grey;
   position: fixed;
-  padding: 0 10px;
+  z-index: 99;
+  padding: 5px 10px;
   width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-button {
+  margin: 0 0 0 auto;
+}
+
+.header-nav-links {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  top: 100%;
+  padding: 5px;
+  text-align: right;
+  background-color: white;
+  display: none;
+}
+
+#nav-toggle {
+  display: none;
+}
+#nav-toggle:checked ~ ul {
+  display: block;
+}
+
+.header-nav-links li {
+  margin-bottom: 7px;
+  color: #555555;
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+}
+.bookingb-btn {
+  display: none;
 }
 .active {
   color: #ff6c00;
 }
-.item {
-  background-color: gray;
-}
 
 /* MAIN */
 main {
-  background-color: yellowgreen;
-  flex: 1 0 auto;
+  background-color: antiquewhite;
+  padding-top: 75px;
+  /* flex: 1 0 auto; */
+}
+section {
+  scroll-margin-top: 75px; /* Величина висоти фіксованого header */
 }
 /* Hero section */
 /* #hero {
@@ -53,4 +99,62 @@ main {
 /* FOOTER */
 footer {
   background-color: bisque;
+}
+
+/* MEDIA */
+
+/* Media query : large or landscape phones */
+@media screen and (min-width: 576px) {
+}
+
+/* Media query: tablets and larger (768px and up)*/
+@media screen and (min-width: 768px) {
+  /* HEADER */
+  #menu-button {
+    display: none;
+  }
+  .header-nav-links {
+    position: static;
+    display: flex;
+    background-color: transparent;
+    width: auto;
+  }
+
+  .header-nav-links li {
+    margin-bottom: 0;
+    font-size: 120%;
+  }
+  .header-nav-links li:not(:last-child) {
+    margin-right: 15px;
+  }
+  .header-nav-links a {
+    color: #ffffff;
+    &:hover {
+      color: #ff6c00;
+    }
+  }
+  .bookingb-btn {
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #ff6c00;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 160px;
+    transition: all 250ms ease;
+    &:hover {
+      background-color: #ff6c00;
+    }
+  }
+}
+
+/* Large devices media screen(laptops and desktops, 992px and up) */
+
+@media screen and (min-width: 992px) {
+  /* HEADER */
+  header {
+    padding: 10px 15px;
+  }
+  .header-nav-links li:not(:last-child) {
+    margin-right: 15px;
+  }
 }

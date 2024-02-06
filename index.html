@@ -32,22 +32,26 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li class="item">
-            <a href="/">
+          <a href="/" class="logo">
               <img src="./assets/images/logo-mob.svg" alt="Logo picture" />
             </a>
-          </li>
-          <li><a href="/" class="active">Home</a></li>
-
+  
+<input type="checkbox" id="nav-toggle" name="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"  id="menu-button">
+         <i class="fa-solid fa-bars"></i>
+      </label>
+        
+        <ul class="header-nav-links">
           <li><a href="#about">About Us</a></li>
           <li><a href="#prices">Services and prices</a></li>
-
           <li><a href="#barbers">Barbers</a></li>
           <li><a href="#contacts">Contacts</a></li>
         </ul>
+        <a href="#online-booking" class="bookingb-btn">Online booking</a>
+    
       </nav>
-      <a href="#online-booking">Online booking</a>
+      
+        
     </header>
     <main>
       <section id="hero">
@@ -169,5 +173,10 @@
           </li>
         </ul>
     </footer>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/92eb8d6647.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
