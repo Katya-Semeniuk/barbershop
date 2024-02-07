@@ -5,6 +5,7 @@
   --black-color: #303030;
   --text-white-color: #ffffff;
   --bg-white-color: #ffffff;
+  --bg-darker-white: #f7f7f7;
   --dark-title-color: #303030;
 }
 
@@ -151,6 +152,11 @@ section {
 #prices p {
   color: var(--text-light-grey);
 }
+.price-list {
+  background-color: #3a3a3a;
+  padding: 15px;
+  border-radius: 3px;
+}
 .price-item {
   display: flex;
   justify-content: space-between;
@@ -161,32 +167,35 @@ section {
 }
 /* Barbers section */
 #barbers {
-  background-color: var(--bg-white-color);
+  background-color: var(--bg-darker-white);
   padding: 40px 30px;
 }
 #barbers h2 {
   color: var(--dark-title-color);
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .barbers-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7px;
+  gap: 10px;
 }
 .barbers-item:not(:last-child) {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .barbers-social-media {
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 .barbers-social-media i {
   font-size: 140%;
-  padding: 5%;
+  padding: 35%;
   color: #3a3a3a;
+  background-color: var(--bg-white-color);
+  border-radius: 50%;
   &:hover {
     color: var(--color-accent);
   }
@@ -260,6 +269,9 @@ footer {
     width: 330px;
     height: 220px;
   }
+
+  /* Prices */
+  /* Barbers */
 }
 
 /* Large devices media screen(laptops and desktops, 992px and up) */
@@ -274,7 +286,7 @@ footer {
   }
 
   /* About */
-  /* About */
+
   #about {
     display: flex;
     gap: 30px;
@@ -290,5 +302,17 @@ footer {
   .img-wrap img {
     width: 270px;
     height: 450px;
+  }
+
+  /* Barbers */
+  #barbers h2 {
+    margin-bottom: 40px;
+  }
+  .barbers-list {
+    display: flex;
+    gap: 30px;
+  }
+  .barbers-item {
+    width: calc((100% - 60px) / 3);
   }
 }
