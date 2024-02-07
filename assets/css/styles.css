@@ -142,13 +142,22 @@ section {
   padding: 40px 30px;
 }
 #prices h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
   color: var(--text-white-color);
 }
 
 #prices p {
   color: var(--text-light-grey);
+}
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-light-grey);
+}
+.price-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 /* Barbers section */
 #barbers {
@@ -241,7 +250,6 @@ footer {
   #about {
     display: flex;
     gap: 30px;
-    align-items: center;
   }
   .img-wrap {
     display: flex;
@@ -263,5 +271,24 @@ footer {
   }
   .header-nav-links li:not(:last-child) {
     margin-right: 15px;
+  }
+
+  /* About */
+  /* About */
+  #about {
+    display: flex;
+    gap: 30px;
+  }
+  #about h2 {
+    font-size: 35px;
+  }
+  .img-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .img-wrap img {
+    width: 270px;
+    height: 450px;
   }
 }
