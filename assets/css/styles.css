@@ -36,6 +36,9 @@ h3 {
 img {
   display: block;
 }
+.container {
+  padding: 40px 30px;
+}
 /* HEADER */
 header {
   background-color: var(--black-color);
@@ -107,6 +110,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: var(--black-color);
   padding: 0 30px;
 }
 
@@ -133,7 +137,6 @@ section {
 }
 /* About section */
 #about {
-  padding: 40px 30px;
   background-color: var(--bg-white-color);
 }
 #about h2 {
@@ -159,6 +162,7 @@ section {
   text-transform: uppercase;
   border: 1px solid var(--color-accent);
   border-radius: 25px;
+  transition: all 250ms ease;
   &:hover,
   &:focus {
     color: var(--text-white-color);
@@ -168,7 +172,6 @@ section {
 /* Prices section */
 #prices {
   background-color: var(--black-color);
-  padding: 40px 30px;
 }
 #prices h2 {
   font-size: 30px;
@@ -202,7 +205,6 @@ section {
 /* Barbers section */
 #barbers {
   background-color: var(--bg-darker-white);
-  padding: 40px 30px;
 }
 #barbers h2 {
   color: var(--dark-title-color);
@@ -234,6 +236,7 @@ section {
 .barbers-social-media i {
   font-size: 140%;
   color: #3a3a3a;
+  transition: all 250ms ease;
   &:hover {
     color: var(--color-accent);
   }
@@ -242,6 +245,13 @@ section {
 .position {
   color: var(--color-accent);
 }
+
+/* Booking section */
+#online-booking {
+  background-color: aquamarine;
+}
+/* Contact section */
+
 /* FOOTER */
 footer {
   background-color: bisque;
@@ -252,6 +262,9 @@ footer {
 
 /* Media query : large or landscape phones */
 @media screen and (min-width: 576px) {
+  .container {
+    padding: 50px 40px;
+  }
   /* Hero */
   .hero-content {
     padding-top: 150px;
@@ -259,10 +272,18 @@ footer {
   .hero-content h1 {
     font-size: 50px;
   }
+  /* Barbers */
+  .barbers-item img {
+    width: 450px;
+    height: 470px;
+  }
 }
 
 /* Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
+  .container {
+    padding: 70px 40px;
+  }
   /* HEADER */
   header {
     padding: 10px;
@@ -347,6 +368,9 @@ footer {
 /* Large devices media screen(laptops and desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
+  .container {
+    padding: 90px 40px;
+  }
   /* HEADER */
   header {
     padding: 10px 15px;
@@ -380,7 +404,7 @@ footer {
 
   /* Barbers */
   #barbers h2 {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   .barbers-list {
     display: flex;
