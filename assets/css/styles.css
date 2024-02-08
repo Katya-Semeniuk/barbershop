@@ -33,10 +33,12 @@ h2,
 h3 {
   font-family: "Raleway", sans-serif;
 }
-
+img {
+  display: block;
+}
 /* HEADER */
 header {
-  background-color: grey;
+  background-color: var(--black-color);
   position: fixed;
   z-index: 99;
   padding: 5px 10px;
@@ -90,19 +92,45 @@ nav {
 /* MAIN */
 main {
   background-color: antiquewhite;
-  padding-top: 75px;
+  padding-top: 67px;
 }
 section {
-  scroll-margin-top: 75px; /* Величина висоти фіксованого header */
+  scroll-margin-top: 71px;
 }
 /* Hero section */
-/* #hero {
-  background-image: url(../images/hero.jpg);
+#hero {
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.8),
+      rgba(25, 28, 38, 0.8)
+    ),
+    url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-} */
+  padding: 0 30px;
+}
 
+.hero-content {
+  padding-top: 115px;
+  padding-bottom: 200px;
+}
+.hero-content h1 {
+  margin: 20px 0;
+  font-size: 40px;
+  color: var(--text-white-color);
+}
+
+.hero-pre-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-light-grey);
+}
+.hero-text {
+  max-width: 325px;
+  line-height: 1.7;
+  color: var(--text-light-grey);
+}
 /* About section */
 #about {
   padding: 40px 30px;
@@ -152,10 +180,16 @@ section {
 #prices p {
   color: var(--text-light-grey);
 }
+.price-list.second {
+  margin-top: 20px;
+}
+
 .price-list {
-  background-color: #3a3a3a;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   padding: 15px;
   border-radius: 3px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 .price-item {
   display: flex;
@@ -190,12 +224,16 @@ section {
   display: flex;
   gap: 30px;
 }
-.barbers-social-media i {
-  font-size: 140%;
+.barbers-social-media a {
+  display: inline-block;
   padding: 35%;
-  color: #3a3a3a;
   background-color: var(--bg-white-color);
   border-radius: 50%;
+}
+
+.barbers-social-media i {
+  font-size: 140%;
+  color: #3a3a3a;
   &:hover {
     color: var(--color-accent);
   }
@@ -214,11 +252,21 @@ footer {
 
 /* Media query : large or landscape phones */
 @media screen and (min-width: 576px) {
+  /* Hero */
+  .hero-content {
+    padding-top: 150px;
+  }
+  .hero-content h1 {
+    font-size: 50px;
+  }
 }
 
 /* Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
   /* HEADER */
+  header {
+    padding: 10px;
+  }
   #menu-button {
     display: none;
   }
@@ -254,7 +302,17 @@ footer {
       background-color: var(--color-accent);
     }
   }
-
+  /* Hero */
+  .hero-content {
+    padding: 200px 0 100px 100px;
+  }
+  .hero-content h1 {
+    font-size: 60px;
+  }
+  .hero-text {
+    font-size: 18px;
+    max-width: 360px;
+  }
   /* About */
   #about {
     display: flex;
@@ -271,6 +329,18 @@ footer {
   }
 
   /* Prices */
+  .price-list {
+    padding: 30px;
+    flex-grow: 1;
+  }
+  .prices-content-wrap {
+    display: flex;
+  }
+  .price-list.second {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
   /* Barbers */
 }
 
@@ -300,8 +370,12 @@ footer {
     gap: 10px;
   }
   .img-wrap img {
-    width: 270px;
+    width: 370px;
     height: 450px;
+  }
+  /* Prices */
+  .price-list {
+    max-width: 550px;
   }
 
   /* Barbers */
