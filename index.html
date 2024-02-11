@@ -300,14 +300,15 @@
       </section>
       <section id="contacts-set" class="container">
         <div id="booking">
-          <h2>Online booking</h2>
+          <h2 class="title-booking">Online booking</h2>
           <form class="form">
             <label for="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
-              class="name-input"
+              class="form-input name"
+              minlength="4"
               required
             />
             <label for="phone">Phone</label>
@@ -315,15 +316,17 @@
               type="tel"
               id="phone"
               name="phone"
-              class="phone-input"
+              class="form-input phone"
               required
             />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" class="message"></textarea>
             <button type="submit" class="btn-submit">Send</button>
           </form>
         </div>
 
         <div id="contacts">
-          <h2>Contacts</h2>
+          <h2 class="title-contacts">Contacts</h2>
           <address class="address">
             <i class="fa-solid fa-location-dot"></i>
             <a

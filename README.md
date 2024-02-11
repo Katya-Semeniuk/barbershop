@@ -43,3 +43,5 @@ Favicon.ico & App Icon GeneratorFrom Dan's Tools
 
 photos
 https://www.pexels.com/uk-ua/search/barbershop/
+
+textarea виходить за межі падінгів
