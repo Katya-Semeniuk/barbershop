@@ -32,33 +32,33 @@
   <body>
     <header>
       <nav>
-          <a href="/" class="logo">
-              <img src="./assets/images/logo-mob.svg" alt="Logo picture" />
-            </a>
-  
-<input type="checkbox" id="nav-toggle" name="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label"  id="menu-button">
-         <i class="fa-solid fa-bars"></i>
-      </label>
-        
+        <a href="/" class="logo">
+          <img src="./assets/images/logo-mob.svg" alt="Logo picture" />
+        </a>
+
+        <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label" id="menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
         <ul class="header-nav-links">
           <li><a href="#about">About Us</a></li>
           <li><a href="#prices">Services and prices</a></li>
           <li><a href="#barbers">Barbers</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#contacts-set">Contacts</a></li>
         </ul>
-        <a href="#online-booking" class="booking-btn">Online booking</a>
+        <a href="#booking" class="booking-btn">Online booking</a>
       </nav>
     </header>
     <main>
       <section id="hero">
         <div class="hero-content">
-           <p class="hero-pre-title">A hair salon for men</p>
+          <p class="hero-pre-title">A hair salon for men</p>
           <h1>Barbershop</h1>
-        <p class="hero-text">
-          We are experts in trendy men’s haircuts. We work quickly, carefully
-          and with style.
-        </p>
+          <p class="hero-text">
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style.
+          </p>
         </div>
       </section>
       <section id="about" class="container">
@@ -78,239 +78,302 @@
         </div>
         <div class="about-container">
           <h2>Best Barbershop in your city</h2>
-        <p >
-          If you want to add more confidence to your image, you should visit us
-        </p>
-        <p class="about-text">
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
-        <a href="#online-booking" class="about-btn">Online booking</a>
+          <p>
+            If you want to add more confidence to your image, you should visit
+            us
+          </p>
+          <p class="about-text">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <a href="#booking" class="about-btn">Online booking</a>
         </div>
-        
       </section>
       <section id="prices" class="container">
         <h2>Services and prices</h2>
         <div class="prices-content-wrap">
           <ul class="price-list">
-          <li class="price-item">
-            <p >Men’s haircut</p>
-            <p class="price-item-text">from 300 uah.</p>
-          </li>
-          <li class="price-item">
-            <p>Beard trim</p>
-            <p class="price-item-text">from 300 uah.</p>
-          </li>
-          <li class="price-item">
-            <p>Mustache trim</p>
-            <p class="price-item-text">from 200 uah.</p>
-          </li>
-          <li class="price-item">
-            <p>Straight razor shave</p>
-            <p class="price-item-text">from 200 uah.</p>
-          </li>
-        </ul>
-    
-        <ul class="price-list second">
-          <li class="price-item">
-            <p>Men’s haircut</p>
-            <p class="price-item-text">from 300 uah.</p>
-          </li>
-          <li class="price-item">
-            <p>Beard trim</p>
-            <p class="price-item-text">from 300 uah.</p>
-          </li>
-          <li class="price-item">
-            <p>Mustache trim</p>
-            <p class="price-item-text">from 200 uah.</p>
-          </li>
-          <li class="price-item">
-            <p>Straight razor shave</p>
-            <p class="price-item-text">from 200 uah.</p>
-          </li>
-        </ul>
+            <li class="price-item">
+              <p>Men’s haircut</p>
+              <p class="price-item-text">from 300 uah.</p>
+            </li>
+            <li class="price-item">
+              <p>Beard trim</p>
+              <p class="price-item-text">from 300 uah.</p>
+            </li>
+            <li class="price-item">
+              <p>Mustache trim</p>
+              <p class="price-item-text">from 200 uah.</p>
+            </li>
+            <li class="price-item">
+              <p>Straight razor shave</p>
+              <p class="price-item-text">from 200 uah.</p>
+            </li>
+          </ul>
+
+          <ul class="price-list second">
+            <li class="price-item">
+              <p>Men’s haircut</p>
+              <p class="price-item-text">from 300 uah.</p>
+            </li>
+            <li class="price-item">
+              <p>Beard trim</p>
+              <p class="price-item-text">from 300 uah.</p>
+            </li>
+            <li class="price-item">
+              <p>Mustache trim</p>
+              <p class="price-item-text">from 200 uah.</p>
+            </li>
+            <li class="price-item">
+              <p>Straight razor shave</p>
+              <p class="price-item-text">from 200 uah.</p>
+            </li>
+          </ul>
         </div>
-        
       </section>
       <section id="barbers" class="container">
         <h2>Our barbers</h2>
         <ul class="barbers-list">
           <li class="barbers-item">
-            <img src="./assets/images/barbers-1.jpg" alt="A man is styling client's hair." width="320" height="340">
+            <!-- <img
+              src="./assets/images/barbers-1.jpg"
+              alt="A man is styling client's hair."
+              width="320"
+              height="340"
+            /> -->
             <p>John Smith</p>
             <p class="position">Extreme Barber</p>
             <ul class="barbers-social-media">
               <li>
-                <a 
-            href="http://www.instagram.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our instagram page(opens in a new tab)">
+                <a
+                  href="http://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our instagram page(opens in a new tab)"
+                >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
-                </li>
+              </li>
 
               <li>
-                <a 
-                href="http://www.twitter.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our twitter page(opens in a new tab)">
-           <i class="fa-brands fa-twitter"></i></a>
-               
+                <a
+                  href="http://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our twitter page(opens in a new tab)"
+                >
+                  <i class="fa-brands fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a 
-                href="http://www.facebook.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our facebook page(opens in a new tab)">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-                </li>
+                <a
+                  href="http://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our facebook page(opens in a new tab)"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
               <li>
-                <a 
-                href="http://www.linkedin.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our linkedin page(opens in a new tab)">
+                <a
+                  href="http://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our linkedin page(opens in a new tab)"
+                >
                   <i class="fa-brands fa-linkedin"></i>
-                </a></li>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="barbers-item">
-             <img src="./assets/images/barbers-2.jpg" alt="A man is styling client's hair." width="320" height="340" >
+            <!-- <img
+              src="./assets/images/barbers-2.jpg"
+              alt="A man is styling client's hair."
+              width="320"
+              height="340"
+            /> -->
             <p>Michele Doe</p>
             <p class="position">Extreme Barber</p>
-             <ul class="barbers-social-media">
-
+            <ul class="barbers-social-media">
               <li>
-                <a 
-            href="http://www.instagram.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our instagram page(opens in a new tab)">
+                <a
+                  href="http://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our instagram page(opens in a new tab)"
+                >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
-                </li>
+              </li>
 
               <li>
-                <a 
-                href="http://www.twitter.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our twitter page(opens in a new tab)">
-           <i class="fa-brands fa-twitter"></i></a>
-               
+                <a
+                  href="http://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our twitter page(opens in a new tab)"
+                >
+                  <i class="fa-brands fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a 
-                href="http://www.facebook.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our facebook page(opens in a new tab)">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-                </li>
+                <a
+                  href="http://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our facebook page(opens in a new tab)"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
               <li>
-                <a 
-                href="http://www.linkedin.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our linkedin page(opens in a new tab)">
+                <a
+                  href="http://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our linkedin page(opens in a new tab)"
+                >
                   <i class="fa-brands fa-linkedin"></i>
-                </a></li>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="barbers-item">
-             <img src="./assets/images/barbers-3.jpg" alt="A man is styling client's hair." width="320" height="340">
+            <!-- <img
+              src="./assets/images/barbers-3.jpg"
+              alt="A man is styling client's hair."
+              width="320"
+              height="340"
+            /> -->
             <p>Alan Black</p>
             <p class="position">Extreme Barber</p>
             <ul class="barbers-social-media">
-
               <li>
-                <a 
-            href="http://www.instagram.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our instagram page(opens in a new tab)">
+                <a
+                  href="http://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our instagram page(opens in a new tab)"
+                >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
-                </li>
+              </li>
 
               <li>
-                <a 
-                href="http://www.twitter.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our twitter page(opens in a new tab)">
-           <i class="fa-brands fa-twitter"></i></a>
-               
+                <a
+                  href="http://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our twitter page(opens in a new tab)"
+                >
+                  <i class="fa-brands fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a 
-                href="http://www.facebook.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our facebook page(opens in a new tab)">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-                </li>
+                <a
+                  href="http://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our facebook page(opens in a new tab)"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
               <li>
-                <a 
-                href="http://www.linkedin.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="visit our linkedin page(opens in a new tab)">
+                <a
+                  href="http://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="visit our linkedin page(opens in a new tab)"
+                >
                   <i class="fa-brands fa-linkedin"></i>
-                </a></li>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
       </section>
-      <div>
-         <section  class="booking container">
-           <h2>Online booking</div>   
-      </section>
+      <section id="contacts-set" class="container">
+        <div id="booking">
+          <h2>Online booking</h2>
+          <form class="form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="name-input"
+              required
+            />
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="phone-input"
+              required
+            />
+            <button type="submit" class="btn-submit">Send</button>
+          </form>
+        </div>
 
-      <section id="contacts" class="container">
-         <h2>Contacts</h2>
-                <address class="address">
-                  <i class="fa-solid fa-location-dot"></i>
-        <a class="location-link" href="https://maps.app.goo.gl/bHjv6WaB8mB951xf9" target="_blank" rel="noopener noreferrer nofollow"
-         aria-label="see our location on the map (opens in a new tab)" >st. Khreshchatyk</a>
-        <ul class="contact-list">
-          <li>
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+380441111111"
-             aria-label="call us (opens in a new tab)">+38 044 111 11 11</a></li>
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:barbershop@email.com"
-            aria-label="write us an email(opens in a new tab)" >barbershop@email.com</a>
-          </li>
-        </ul>
-       </address>
-       <div class="contacts-hours-heading">Working hours</div>
-       <div class="contacts-hours">Every day from 9:00 to 22:00</div>
+        <div id="contacts">
+          <h2>Contacts</h2>
+          <address class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <a
+              class="location-link"
+              href="https://maps.app.goo.gl/bHjv6WaB8mB951xf9"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="see our location on the map (opens in a new tab)"
+              >st. Khreshchatyk</a
+            >
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a
+                  href="tel:+380441111111"
+                  aria-label="call us (opens in a new tab)"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a
+                  href="mailto:barbershop@email.com"
+                  aria-label="write us an email(opens in a new tab)"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="contacts-hours-heading">Working hours</div>
+          <div class="contacts-hours">Every day from 9:00 to 22:00</div>
+        </div>
       </section>
-      </div>
-     
-      
-       
-       
-     
     </main>
     <footer>
       <ul>
-          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
-          </li>
-        </ul>
+        <li>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Youtube</a
+          >
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+      </ul>
     </footer>
     <!-- Font Awesome Kit -->
     <script
