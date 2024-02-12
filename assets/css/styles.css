@@ -398,7 +398,7 @@ label {
   display: flex;
   gap: 15px;
   margin-left: auto;
-  font-size: 16px;
+  font-size: 14px;
 }
 .footer-social-item a {
   color: var(--text-grey-color);
@@ -427,7 +427,10 @@ label {
     height: 470px;
   }
 
-  /* Contact section */
+  /* Footer */
+  .footer-social-list {
+    font-size: 18px;
+  }
 }
 
 /* Media query: tablets and larger (768px and up)*/
