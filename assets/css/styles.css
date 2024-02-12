@@ -97,7 +97,6 @@ nav {
 
 /* MAIN */
 main {
-  background-color: yellow;
   margin-top: 57px;
 }
 section {
@@ -351,6 +350,7 @@ label {
   font-style: normal;
   font-size: 20px;
   color: var(--text-light-grey);
+  transition: all 250ms ease;
   &:hover {
     color: var(--color-accent);
   }
@@ -384,11 +384,29 @@ label {
 }
 
 /* FOOTER */
-footer {
-  background-color: bisque;
-  padding-bottom: 285px;
+.footer {
+  display: flex;
+  padding: 15px;
+  background-color: var(--bg-darker-white);
 }
-
+.footer-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black-color);
+}
+.footer-social-list {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+  font-size: 16px;
+}
+.footer-social-item a {
+  color: var(--text-grey-color);
+  transition: all 250ms ease;
+  &:hover {
+    color: var(--color-accent);
+  }
+}
 /* MEDIA */
 
 /* Media query : large or landscape phones */
@@ -505,6 +523,13 @@ footer {
   }
   .title-contacts {
     margin-bottom: 60px;
+  }
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+  .footer-social-list {
+    gap: 50px;
   }
 }
 
