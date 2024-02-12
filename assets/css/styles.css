@@ -82,10 +82,9 @@ nav {
 }
 .header-nav-links a {
   color: var(--text-white-color);
-  &:hover,
-  &:focus {
-    color: var(--color-accent);
-  }
+}
+.header-nav-links a:hover {
+  color: var(--color-accent);
 }
 .booking-btn {
   display: none;
@@ -165,11 +164,12 @@ section {
   border: 1px solid var(--color-accent);
   border-radius: 25px;
   transition: all 250ms ease;
-  &:hover,
-  &:focus {
-    color: var(--text-white-color);
-    background-color: var(--color-accent);
-  }
+}
+
+.about-btn:hover,
+.about-btn:focus {
+  color: var(--text-white-color);
+  background-color: var(--color-accent);
 }
 /* Prices section */
 #prices {
@@ -250,9 +250,10 @@ section {
   font-size: 140%;
   color: #3a3a3a;
   transition: all 250ms ease;
-  &:hover {
-    color: var(--color-accent);
-  }
+}
+
+.barbers-social-media i:hover {
+  color: var(--color-accent);
 }
 
 .position {
@@ -283,15 +284,17 @@ label {
   background-color: transparent;
   cursor: pointer;
   transition: all 250ms ease;
-
-  &:hover,
-  &:focus {
-    border: 1px solid var(--color-accent);
-  }
 }
+
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid var(--color-accent);
+}
+
 .form-input:not(:focus):not(:placeholder-shown):invalid {
   color: red;
 }
+
 .message {
   font-size: 18px;
   width: 100%;
@@ -303,10 +306,11 @@ label {
   background-color: transparent;
   cursor: pointer;
   transition: all 250ms ease;
-  &:hover,
-  &:focus {
-    border: 1px solid var(--color-accent);
-  }
+}
+
+.message:hover,
+.message:focus {
+  border: 1px solid var(--color-accent);
 }
 
 /* button submit */
@@ -324,10 +328,10 @@ label {
   border: 1px solid var(--color-accent);
   transition: all 250ms ease;
   cursor: pointer;
-  &:hover,
-  &:focus {
-    background-color: var(--color-accent);
-  }
+}
+
+.btn-submit:hover {
+  background-color: var(--color-accent);
 }
 
 /* Contacts section */
@@ -351,10 +355,12 @@ label {
   font-size: 20px;
   color: var(--text-light-grey);
   transition: all 250ms ease;
-  &:hover {
-    color: var(--color-accent);
-  }
 }
+
+.address a:hover {
+  color: var(--color-accent);
+}
+
 .location-link {
   font-weight: 600;
 }
@@ -403,9 +409,10 @@ label {
 .footer-social-item a {
   color: var(--text-grey-color);
   transition: all 250ms ease;
-  &:hover {
-    color: var(--color-accent);
-  }
+}
+
+.footer-social-item a:hover {
+  color: var(--color-accent);
 }
 /* MEDIA */
 
@@ -457,22 +464,25 @@ label {
 
   .header-nav-links a {
     color: var(--text-white-color);
-    &:hover {
-      color: var(--color-accent);
-    }
   }
+
+  .header-nav-links a:hover {
+    color: var(--color-accent);
+  }
+
   .booking-btn {
     display: inline-block;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+    border-radius: 25px;
     color: var(--text-white-color);
     border: 1px solid var(--color-accent);
-    padding: 10px;
-    text-transform: uppercase;
     transition: all 250ms ease;
-    width: 160px;
-    border-radius: 25px;
-    &:hover {
-      background-color: var(--color-accent);
-    }
+  }
+
+  .booking-btn:hover {
+    background-color: var(--color-accent);
   }
   /* Hero */
   .hero-content {
