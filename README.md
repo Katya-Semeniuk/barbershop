@@ -39,40 +39,32 @@ The burger menu will disappear automatically when you click on the corresponding
 
 #### Validator Testing
 
-HTML
-
 The first problem I faced was the large size of the images, which is why they were uploaded with a delay. Using a resource like https://squoosh.app/ did not fix this situation. Therefore, I first cut the pictures to the maximum calculated size, and only then add them to the project. With these actions, it was possible to increase performance at lightouse
 
-No errors were returned when passing through the official W3C validator
+HTML
+No errors were returned when passing through the official W3C validator https://validator.w3.org/#validate_by_input
 CSS
-No errors were found when passing through the official (Jigsaw) validator
+No errors were found when passing through the official (Jigsaw) validator https://jigsaw.w3.org/css-validator/#validate_by_input
 
-`python3 -m http.server`
+Deployment
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found [here] (https://katya-semeniuk.github.io/barbershop/)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+#### Credits
 
 https://www.favicon-generator.org/
 Favicon.ico & App Icon GeneratorFrom Dan's Tools
 
-photos
+The icons in the Our Barbers and Contacs sections were taken from https://fontawesome.com/
+
+The link to the location was taken from Googl map https://maps.google.com/
+Media
+All pictures were taken from
 https://www.pexels.com/uk-ua/search/barbershop/
 
-textarea виходить за межі падінгів
+####
