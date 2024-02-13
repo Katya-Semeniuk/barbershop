@@ -39,12 +39,12 @@ The burger menu will disappear automatically when you click on the corresponding
 
 #### Validator Testing
 
-The first problem I faced was the large size of the images, which is why they were uploaded with a delay. Using a resource like https://squoosh.app/ did not fix this situation. Therefore, I first cut the pictures to the maximum calculated size, and only then add them to the project. With these actions, it was possible to increase performance at lightouse
+The first problem I faced was the large size of the images, which is why they were uploaded with a delay. Using a resource like [Squoosh](https://squoosh.app/) did not fix this situation. Therefore, I first cut the pictures to the maximum calculated size, and only then add them to the project. With these actions, it was possible to increase performance at lightouse
 
 HTML
-No errors were returned when passing through the official W3C validator https://validator.w3.org/#validate_by_input
-CSS
-No errors were found when passing through the official (Jigsaw) validator https://jigsaw.w3.org/css-validator/#validate_by_input
+No errors were returned when passing through the official [W3C validator](https://validator.w3.org/#validate_by_input
+CSS)
+No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
@@ -53,18 +53,16 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 In the GitHub repository, navigate to the Settings tab
 From the source section drop-down menu, select the Master Branch
 Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found [here] (https://katya-semeniuk.github.io/barbershop/)
+The live link can be found [here](https://katya-semeniuk.github.io/barbershop/)
 
 #### Credits
 
-https://www.favicon-generator.org/
-Favicon.ico & App Icon GeneratorFrom Dan's Tools
+Favicon was created at [Favicon.ico & App Icon GeneratorFrom Dan's Tools](https://www.favicon-generator.org/)
 
-The icons in the Our Barbers and Contacs sections were taken from https://fontawesome.com/
+The icons in the Our Barbers and Contacs sections were taken from [Font awesome](https://fontawesome.com/)
 
-The link to the location was taken from Googl map https://maps.google.com/
+The link to the location was taken from [Googl map](https://maps.google.com/)
 Media
-All pictures were taken from
-https://www.pexels.com/uk-ua/search/barbershop/
+All pictures were taken from [Pexels.com](https://www.pexels.com/uk-ua/search/barbershop/)
 
 ####
