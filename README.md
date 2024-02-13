@@ -12,14 +12,12 @@ The responsive navigation bar includes a link to the logo, which is also a link 
 
 ![Navigation Bar](Navigationbar.png)
 
-<u></u>
-
 - The landing page image
 
 represents a photo with an image of a man's beard cut, as well as text over the image, drawing the attention of potential customers to the exquisite work of masters.
 ![Landing page](langingpage.png)
 
--Best Barbershop in your city section
+- Best Barbershop in your city section
 
 includes images of the work of the masters and introductory text, which allows users to understand the advantages of the Barbershop service and provides quick access to online registration.
 
