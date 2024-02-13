@@ -1,24 +1,55 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Barbershop is a site for men who are looking for the perfect hairstylist.
 
-Welcome,
+It showcases employees and their social networks so that site users can view portfolios of work and choose the one they like best. It is also very convenient that customers have access to information about prices and services, and they can immediately leave their data and wishes for a recording.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+Navigation Bar
 
-## Codeanywhere Reminders
+The responsive navigation bar includes a link to the logo, which is also a link to the main page, as well as links to the About Us page, Services and Prices page, Barbers page and Contact page, and Online Booking. On the mobile version of the site, the site navigation is shown using a burger menu, which saves the header space quite well.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The landing page image
+
+represents a photo with an image of a man's beard cut, as well as text over the image, drawing the attention of potential customers to the exquisite work of masters.
+
+Best Barbershop in your city section
+
+includes images of the work of the masters and introductory text, which allows users to understand the advantages of the Barbershop service and provides quick access to online registration.
+
+Services and prices
+
+this section helps users to immediately familiarize themselves with the type of services and prices, which saves time.
+
+Our barbers section
+
+includes getting to know the master by presenting his photo. And also includes links to his social networks, which will help customers learn more about the master himself and his works.
+
+Contacts section consists of two parts.
+The first is an online registration form. It is important that the user can enter his wishes and comments in the Message input field.
+The second - contact data - location with a link to the map, quick dialing with one click on the line with the number. And also a link to write an email.
+It is very convenient to provide information about the work schedule, which will help users better decide on the appropriate hour for recording.
+
+The Footer
+
+The footer section includes links to the relevant social media sites such as Instagram and Youtube. The links will open to a new tab to allow easy navigation for the user.
+
+### Features Left to Implement
+
+The burger menu will disappear automatically when you click on the corresponding section.
+
+#### Validator Testing
+
+HTML
+
+The first problem I faced was the large size of the images, which is why they were uploaded with a delay. Using a resource like https://squoosh.app/ did not fix this situation. Therefore, I first cut the pictures to the maximum calculated size, and only then add them to the project. With these actions, it was possible to increase performance at lightouse
+
+No errors were returned when passing through the official W3C validator
+CSS
+No errors were found when passing through the official (Jigsaw) validator
 
 `python3 -m http.server`
 
 A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
 A button should appear to click: _Open Preview_ or _Open Browser_.
 
