@@ -2,12 +2,11 @@
   --color-accent: #ff6c00;
   --text-grey-color: #555555;
   --text-light-grey: #9da4bd;
-  --black-color: #303030;
   --bg-black-color: #191c26;
   --text-white-color: #ffffff;
   --bg-white-color: #ffffff;
   --bg-darker-white: #f7f7f7;
-  --dark-title-color: #303030;
+  --dark-text-color: #303030;
 }
 
 * {
@@ -22,22 +21,27 @@ ul {
 a {
   text-decoration: none;
 }
+
 body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
-  color: var(--black-color);
+  color: var(--dark-text-color);
 }
+
 h1,
 h2,
 h3 {
   font-family: "Raleway", sans-serif;
 }
+
 img {
   display: block;
 }
+
 .container {
   padding: 40px 30px;
 }
+
 /* HEADER */
 header {
   background-color: var(--bg-black-color);
@@ -73,6 +77,7 @@ nav {
 #nav-toggle {
   display: none;
 }
+
 #nav-toggle:checked ~ ul {
   display: block;
 }
@@ -80,9 +85,11 @@ nav {
 .header-nav-links li {
   margin-bottom: 10px;
 }
+
 .header-nav-links a {
   color: var(--text-white-color);
 }
+
 .header-nav-links a:hover {
   color: var(--color-accent);
 }
@@ -101,6 +108,7 @@ main {
 section {
   scroll-margin-top: 57px;
 }
+
 /* Hero section */
 #hero {
   background-image: linear-gradient(
@@ -112,20 +120,19 @@ section {
   background-position: center;
   background-size: cover;
   background-color: var(--black-color);
-  padding: 0 30px;
+  padding: 110px 30px 110px;
 }
 
-.hero-content {
-  padding-top: 115px;
-  padding-bottom: 200px;
-}
-.hero-content h1 {
-  margin: 20px 0;
+#hero h1 {
+  position: relative;
   font-size: 40px;
+  margin-bottom: 20px;
   color: var(--text-white-color);
 }
 
 .hero-pre-title {
+  position: absolute;
+  top: 125px;
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -136,6 +143,7 @@ section {
   line-height: 1.7;
   color: var(--text-light-grey);
 }
+
 /* About section */
 #about {
   background-color: var(--bg-white-color);
@@ -171,9 +179,11 @@ section {
   color: var(--text-white-color);
   background-color: var(--color-accent);
 }
+
 /* Prices section */
+
 #prices {
-  background-color: var(--black-color);
+  background-color: var(--dark-text-color);
 }
 #prices h2 {
   font-size: 30px;
@@ -196,6 +206,9 @@ section {
   max-width: 450px;
   margin: 0 auto;
 }
+.price-list.second {
+  background: linear-gradient(180deg, rgba(9, 11, 19, 0.2) 0%, #090b13 100%);
+}
 .price-item {
   display: flex;
   justify-content: space-between;
@@ -215,6 +228,7 @@ section {
 .price-item-text {
   order: 1;
 }
+
 /* Barbers section */
 #barbers {
   background-color: var(--bg-darker-white);
@@ -268,9 +282,6 @@ section {
   gap: 100px;
 }
 
-/* .form {
-  padding: 10px;
-} */
 label {
   color: var(--text-light-grey);
 }
@@ -335,6 +346,7 @@ label {
 }
 
 /* Contacts section */
+
 #contacts {
   text-align: center;
 }
@@ -398,7 +410,7 @@ label {
 .footer-text {
   font-size: 16px;
   font-weight: 600;
-  color: var(--black-color);
+  color: var(--dark-text-color);
 }
 .footer-social-list {
   display: flex;
@@ -414,6 +426,7 @@ label {
 .footer-social-item a:hover {
   color: var(--color-accent);
 }
+
 /* MEDIA */
 
 /* Media query : large or landscape phones */
@@ -422,10 +435,10 @@ label {
     padding: 50px 40px;
   }
   /* Hero */
-  .hero-content {
-    padding-top: 150px;
+  #hero {
+    padding: 120px 0px 120px 60px;
   }
-  .hero-content h1 {
+  #hero h1 {
     font-size: 50px;
   }
 
@@ -479,17 +492,23 @@ label {
   .booking-btn:hover {
     background-color: var(--color-accent);
   }
+
   /* Hero */
-  .hero-content {
-    padding: 200px 0 100px 100px;
+  #hero {
+    padding-top: 130px;
   }
-  .hero-content h1 {
+
+  #hero h1 {
     font-size: 60px;
   }
   .hero-text {
     font-size: 18px;
     max-width: 360px;
   }
+  .hero-pre-title {
+    top: 145px;
+  }
+
   /* About */
   #about {
     display: flex;
@@ -555,8 +574,15 @@ label {
     margin-right: 15px;
   }
 
-  /* About */
+  /* Hero */
+  #hero {
+    padding: 200px 0px 120px 110px;
+  }
+  .hero-pre-title {
+    top: 215px;
+  }
 
+  /* About */
   #about {
     display: flex;
     gap: 30px;
