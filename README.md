@@ -2,7 +2,7 @@
 
 It showcases employees and their social networks so that site users can view portfolios of work and choose the one they like best. It is also very convenient that customers have access to information about prices and services, and they can immediately leave their data and wishes for a recording.
 
-![An image that shows how the site looks on different devices](<Site image.png>)
+![An image that shows how the site looks on different devices](<./doc/readmecontent/Site image.png>)
 
 ## Features
 
@@ -10,47 +10,60 @@ It showcases employees and their social networks so that site users can view por
 
 The responsive navigation bar includes a link to the logo, which is also a link to the main page, as well as links to the About Us page, Services and Prices page, Barbers page and Contact page, and Online Booking. On the mobile version of the site, the site navigation is shown using a burger menu, which saves the header space quite well.
 
-![Navigation Bar](Navigationbar.png)
+![Burger menu picture](./doc/readmecontent/burger-menu.png)
 
 - The landing page image
 
 represents a photo with an image of a man's beard cut, as well as text over the image, drawing the attention of potential customers to the exquisite work of masters.
-![Landing page](langingpage.png)
+![Landing page picture](./doc/readmecontent/langingpage.png)
 
 - Best Barbershop in your city section
 
 includes images of the work of the masters and introductory text, which allows users to understand the advantages of the Barbershop service and provides quick access to online registration.
 
-![Barbershop section](<Barbershop section.png>)
+![Barbershop section picture](<./doc/readmecontent/Barbershop section.png>)
 
 - Services and prices
 
 this section helps users to immediately familiarize themselves with the type of services and prices, which saves time.
-![Services and prices page](Services.png)
+![Services and prices page](./doc/readmecontent/Services.png)
 
--Our barbers section
+- Our barbers section
 
 includes getting to know the master by presenting his photo. And also includes links to his social networks, which will help customers learn more about the master himself and his works.
 
-![Barbers section](barbers.png)
+![Barbers section](./doc/readmecontent/barbers.png)
 
 - Contacts section consists of two parts.
 
 The first is an online registration form. It is important that the user can enter his wishes and comments in the Message input field.
 The second - contact data - location with a link to the map, quick dialing with one click on the line with the number. And also a link to write an email.
 It is very convenient to provide information about the work schedule, which will help users better decide on the appropriate hour for recording.
-![Contacts section](contacts.png)
+![Contacts section](./doc/readmecontent/contacts.png)
 
 - The Footer
 
 The footer section includes links to the relevant social media sites such as Instagram and Youtube. The links will open to a new tab to allow easy navigation for the user.
-![Footer](footer.png)
+![Footer](./doc/readmecontent/footer.png)
 
 ### Features Left to Implement
 
 The burger menu will disappear automatically when you click on the corresponding section.
 
-#### Validator Testing
+### Technologies and Tools
+
+The following technologies were used to create this project:
+
+1. HTML;
+2. CSS.
+
+The following tools helped to develop this project:
+
+1. Code editor VSC;
+2. Googl Chrome Dev Tools;
+3. Getting fonts from [Google Fonts](https://fonts.google.com/);
+
+### Validator Testing
 
 The first problem I faced was the large size of the images, which is why they were uploaded with a delay. Using a resource like [Squoosh](https://squoosh.app/) did not fix this situation. Therefore, I first cut the pictures to the maximum calculated size, and only then add them to the project. With these actions, it was possible to increase performance at lightouse
 

@@ -69,7 +69,7 @@ nav {
   width: 100%;
   left: 0%;
   top: 100%;
-  padding: 10px;
+  padding: 5px 15px 10px 15px;
   text-align: right;
   background-color: var(--bg-black-color);
   display: none;
@@ -79,7 +79,7 @@ nav {
   display: none;
 }
 
-#nav-toggle i {
+#menu-button i {
   font-size: 28px;
 }
 #nav-toggle:checked ~ ul {
@@ -291,6 +291,9 @@ section {
   gap: 100px;
 }
 
+.form {
+  margin: 0 auto;
+}
 label {
   color: var(--text-light-grey);
 }
