@@ -26,7 +26,7 @@ includes images of the work of the masters and introductory text, which allows u
 - Services and prices
 
 this section helps users to immediately familiarize themselves with the type of services and prices, which saves time.
-![Services and prices page](./doc/readmecontent/Services.png)
+![Services and prices page](./doc/readmecontent/servises.png)
 
 - Our barbers section
 
@@ -69,18 +69,32 @@ The first problem I faced was the large size of the images, which is why they we
 
 - HTML
   No errors were returned when passing through the official [W3C validator](https://validator.w3.org/#validate_by_input)
+  ![HTML validator](./doc/readmecontent/HTML%20validator.png)
+
 - CSS
   No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+  ![Css validator](./doc/readmecontent/css%20validator.png)
 
 ##### Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+The site was deployed to GitHub pages.
 
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 The live link can be found [here](https://katya-semeniuk.github.io/barbershop/)
+
+To deploy on Github pages, the following steps can be taken:
+
+Log in to GitHub and locate the GitHub Repository
+
+1. Go to the settings tab
+2. Go to the GitHub Pages section
+3. Go to the Source section and select the Master Branch
+4. Once the page has refreshed, scroll back down to the GitHub Pages section to locate the now published site link.
+
+To fork the repository:
+
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository, on the right side of the page, select "Fork"
+3. You should now have a copy of the original repository in your GitHub account, and you can deploy it to GitHub pages following the steps above
 
 ###### Credits
 
